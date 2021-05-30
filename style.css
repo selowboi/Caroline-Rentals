@@ -1,0 +1,507 @@
+body{
+    margin: 0;
+}
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*-------------------------------- HEADER --------------------------------*/
+/*------------------------------------------------------------------------*/
+header{
+    background-color: white;
+}
+
+.top-nav{
+    background-color: white;
+    padding: 50px 100px 50px 100px;
+    margin-top: -50px;
+}
+
+#logo{
+    display: inline-block;
+}
+
+#logo > a > img{
+    width: 250px;
+    height: 100px;
+    margin-bottom: -50px;
+}
+
+.login-register-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+#home-login{
+    margin-right: 20px;
+}
+
+#home-register{
+    margin-right: -70px;
+}
+
+#home-register-button{
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: rgb(30, 90, 255);
+}
+
+#home-login-button{
+    padding: 10px 38px 10px 38px;
+    border: none;
+    background-color: rgb(30, 90, 255);
+}
+
+#home-login-button > a,
+#home-register-button > a{
+    text-decoration: none;
+    color: white;
+} 
+
+@media only screen and (max-width: 600px){
+    header{
+        width: 100%;
+        padding: 10px 10px 10px 0px;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-register-button{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: 50px 0px 0px 30px;
+    }
+
+    #home-login{
+        margin-left: 80px;
+    }
+
+    #home-register{
+        margin-right: 80px;
+    }
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------------- HEADER --------------------------------*/
+
+/*-------------------------------- FOOTER --------------------------------*/
+/*------------------------------------------------------------------------*/
+.foot-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 100px 100px 100px;
+    background-color: white;
+    margin-left: 730px;
+}
+
+#facebook,
+#instagram,
+#youtube,
+#twitter
+{
+    margin-left: 20px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 20px;
+    border-style: solid;
+    padding-right: 700px;
+}
+
+#newsletter-1{
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#newsletter-2{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    border-color: grey;
+    color: grey;
+    margin-left: 5px;
+    padding-right: 50px;
+}
+
+#newsletter-3{
+    margin: 5px 0px 5px 5px;
+}
+
+#subscribe-button{
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border: none;
+    background-color: rgb(30, 90, 255);
+    text-align: center;
+}
+
+#footer > #copyright{
+    padding: 30px 0px;
+    background-color: rgb(30, 90, 255);
+    color: white;
+    text-align: center;
+    margin-top: -75px;
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------------- FOOTER --------------------------------*/
+
+/*-------------------------------- NAVBAR --------------------------------*/
+/*------------------------------------------------------------------------*/
+.menu{
+    background-color: black;
+    margin-top: -17px;
+}
+
+.home-button,
+.product-button,
+.contact-button
+{   
+    margin-right: -3px;
+    background-color: black;
+    padding: 23px 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button > a,
+.product-button > a,
+.contact-button > a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.active
+{
+    display: inline-block;
+    position: relative;
+}
+
+.active:hover .home-button,
+.active:hover .product-button,
+.active:hover .contact-button
+{
+    background-color: red;
+}
+
+.product-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 137px;
+    z-index: 1;
+    text-align: center;
+}
+
+.product-content a{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.product-content a:hover{
+    background-color: red;
+}
+
+.active:hover .product-content{
+    display: block;
+}
+
+#home > button:hover:not(#home),
+#product > button:hover:not(#product),
+#contact > button:hover:not(#contact)
+{
+    background-color: red;
+}
+
+#home > button,
+#product > button,
+#contact > button
+{
+    background-color: rgb(30, 90, 255);
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------------- NAVBAR --------------------------------*/
+
+/*--------------------------------- HOME ---------------------------------*/
+/*------------------------------------------------------------------------*/
+.home-content{
+    background-image: url(Alphard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    padding: 500px 250px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.home-content > .home-text{
+    margin-top: -300px;
+    font-size: 36px;
+}
+
+#text-1 > span{
+    color: rgb(30, 90, 255);
+}
+
+#text-2 > mark{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#book-button{
+    padding: 10px 30px 10px 30px; 
+    background-color: dodgerblue;
+    border-color: white;
+    font-size: 18px;
+}
+
+#book-button > a{
+    text-decoration: none;
+    color: white;
+}
+/*------------------------------------------------------------------------*/
+/*--------------------------------- HOME ---------------------------------*/
+
+/*-------------------------------- LOG-IN --------------------------------*/
+/*------------------------------------------------------------------------*/
+
+#login-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+#login-title{
+    font-size: 32px;
+}
+
+#email{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 20px 50px 20px 50px;
+    background-color: white;
+    color: black;
+}
+
+#password{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 20px 50px 20px 50px;
+    background-color: white;
+    color: black;
+}
+
+#login-btn{
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    padding: 20px 40px 20px 40px;
+}
+
+#here{
+    text-decoration: none;
+    color: dodgerblue;
+}
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- LOG-IN ----------------------------------*/
+
+/*-------------------------------- REGISTER --------------------------------*/
+/*--------------------------------------------------------------------------*/
+.register-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.register-content > h2{
+    font-size: 34px;
+}
+
+#register-name,
+#register-email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 590px;
+}
+
+#register-1,
+#register-2{
+    padding-right: 720px;
+}
+
+#register-4{
+    padding-right: 725px;
+}
+
+#register-3{
+    padding-right: 705px;
+}
+
+#register-5{
+    padding-right: 695px;
+}
+
+.gender{
+    padding-right: 650px;
+}
+
+#city{
+    padding: 5px 620px 5px 10px;
+}
+
+.register-button{
+    margin-top: 50px;
+}
+
+.register-button > button{
+    padding: 7px 20px 7px 20px;
+    border: none;
+    color: white;
+    background-color: rgb(30, 90, 255);
+}
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- REGISTER --------------------------------*/
+
+/*-------------------------------- CONTACT ---------------------------------*/
+/*--------------------------------------------------------------------------*/
+#contact-title{
+    text-align: center;
+    font-size: 54px;
+}
+
+.contact-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.contact-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    margin-left: -150px;
+    margin-right: -350px;
+    padding-bottom: 25px;
+}
+
+.contact-1{
+    padding-left: 30px;
+    margin-right: -100px;
+}
+
+.contact-2{
+    margin-left: 250px;
+    padding-right: 80px;
+}
+
+.contact-1 > input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: whitesmoke;
+    padding: 10px 300px 10px 10px;
+}
+
+.contact-2 > textarea{
+    margin-top: -20px;
+    color: grey;
+}
+
+.contact-2 > button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    margin-top: 5px;
+    margin-left: 250px;   
+    font-weight: bolder;
+}
+
+#contact-name,
+#contact-email,
+#contact-message{
+    font-size: 18px;
+}
+
+.contact-3 > h3{
+    font-size: 28px;
+}
+
+.contact-3{
+    background-color: white;
+    margin-right: -100px;
+    padding: 0px 0px 50px 30px;
+}
+
+.contact-3 > h4 > span{
+    color: rgb(30, 90, 255);
+}
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- CONTACT ---------------------------------*/
+
+/*-------------------------------- PRODUCT ---------------------------------*/
+/*--------------------------------------------------------------------------*/
+.product-page{
+    text-align: center;
+    font-weight: bold;
+}
+
+.family-car{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#mobilio > img{
+    height: 140px;
+    width: 175px;
+    padding: 10px 10px 10px 10px;
+}
+
+#avanza > img,
+#innova > img,
+#sienta > img{
+    padding: 10px 10px 10px 10px;
+}
+
+#avanza,
+#mobilio,
+#innova,
+#sienta{
+    border-style: solid;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#mobilio > p{
+    margin-top: 12px;
+}
