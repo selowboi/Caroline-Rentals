@@ -239,7 +239,7 @@ header{
 /*--------------------------------- HOME ---------------------------------*/
 /*------------------------------------------------------------------------*/
 .home-content{
-    background-image: url(Alphard.jpg);
+    background-image: url(./img/Alphard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
